@@ -11,7 +11,7 @@ const Testimonials = () => {
   [
    {
     id: 1,
-    name: "Samantha Jones",
+    name: "Arjun Mehta ",
     role: "Software Engineer",
     img: "/img-1.jpg",
     text: "I dreaded updating my resume, but Resumek AI made it incredibly fast and simple. I created a professional, polished resume in under 10 minutes. An absolute lifesaver!",
@@ -39,14 +39,14 @@ const Testimonials = () => {
   },
   {
     id: 5,
-    name: "Fatima Khan",
+    name: "Firoz Khan",
     role: "UX/UI Designer",
     img: "/img-5.jpg",
     text: "Finally, a resume builder that understands design! The templates are modern, clean, and highly customizable. It allowed me to create a visually appealing resume that truly reflects my personal brand.",
   },
   {
     "id": 6,
-    "name": "Arjun Mehta",
+    "name": "Samantha Jones",
     "role": "Director of Operations",
     "img": "/img-6.jpg",
     "text": "With over 3 years of experience, my resume was cluttered and lengthy. Resumek AI helped me distill my extensive career into a powerful, concise executive resume. The AI suggestions for quantifying achievements were invaluable."
