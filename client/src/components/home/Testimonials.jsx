@@ -13,70 +13,70 @@ const Testimonials = () => {
     id: 1,
     name: "Samantha Jones",
     role: "Software Engineer",
-    img: "images/img-1.jpg",
+    img: "/img-1.jpg",
     text: "I dreaded updating my resume, but Resumek AI made it incredibly fast and simple. I created a professional, polished resume in under 10 minutes. An absolute lifesaver!",
   },
   {
     id: 2,
     name: "Rohan Patel",
     role: "Data Analyst",
-    img: "images/img-2.jpg",
+    img: "/img-2.jpg",
     text: "As a data analyst, I appreciate efficiency. Resumek AI's platform is brilliant. It not only saved me hours but also optimized my resume for ATS, which led to a significant increase in responses from recruiters.",
   },
   {
     id: 3,
     name: "Anjali Rao",
     role: "Recent Graduate",
-    img: "images/img-3.jpg",
+    img: "/img-3.jpg",
     text: "Starting with a blank page was intimidating. Resumek AI guided me through every step, suggesting skills and phrasing I hadn't thought of. I went from having no resume to a professional one that landed me my first internship!",
   },
   {
     id: 4,
     name: "David Garcia",
     role: "Sales Manager",
-    img: "images/img-4.jpg",
+    img: "/img-4.jpg",
     text: "Transitioning to a new industry felt challenging. The AI was incredible at helping me rephrase my sales experience to highlight skills relevant for a tech role. It's the best tool for any career changer.",
   },
   {
     id: 5,
     name: "Fatima Khan",
     role: "UX/UI Designer",
-    img: "images/img-5.jpg",
+    img: "/img-5.jpg",
     text: "Finally, a resume builder that understands design! The templates are modern, clean, and highly customizable. It allowed me to create a visually appealing resume that truly reflects my personal brand.",
   },
   {
     "id": 6,
     "name": "Arjun Mehta",
     "role": "Director of Operations",
-    "img": "images/img-6.jpg",
+    "img": "/img-6.jpg",
     "text": "With over 3 years of experience, my resume was cluttered and lengthy. Resumek AI helped me distill my extensive career into a powerful, concise executive resume. The AI suggestions for quantifying achievements were invaluable."
   },
   {
     "id": 7,
     "name": "Chloe Davis",
     "role": "Registered Nurse",
-    "img": "images/img-7.jpg",
+    "img": "/img-7.jpg",
     "text": "Writing a resume for the healthcare industry requires very specific terminology. Resumek AI's keyword suggestions were spot-on for the nursing positions I was targeting, helping my application get noticed by hospital hiring managers."
   },
   {
     "id": 8,
     "name": "Isabella Rossi",
     "role": "Freelance Content Strategist",
-    "img": "images/img-8.jpg",
+    "img": "/img-8.jpg",
     "text": "As a freelancer, I constantly need to tailor my resume for different projects. Resumek AI makes it effortless to duplicate and customize my master resume in minutes, saving me a huge amount of time while applying for gigs."
   },
   {
     "id": 9,
     "name": "Kenji Tanaka",
     "role": "Product Manager",
-    "img": "images/img-9.jpg",
+    "img": "/img-9.jpg",
     "text": "The AI's ability to analyze my experience and suggest industry-specific keywords was a game-changer. It optimized my resume perfectly for ATS screeners, leading to more callbacks. A truly intelligent feature!"
   },
   {
     "id": 10,
     "name": "Aisha Ahmed",
     "role": "University Student",
-    "img": "images/img-10.jpg",
+    "img": "/img-10.jpg",
     "text": "I needed a CV for my Master's applications, not a standard resume. Resumek AI had academic templates that helped me properly format my research experience and publications. It took all the stress out of the application process."
   },
 
