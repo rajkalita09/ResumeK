@@ -13,7 +13,7 @@ const [resumeData, setResumeData] = useState(null);
 
 const loadResumeData = async () => {
   try {
-    const {data} = await api.get(`${import.meta.env.VITE_API_BASE_URL}/api/resumes/public/${resumeId}`)
+    const {data} = await api.get(`${import.meta.env.VITE_BASE_URL}/api/resumes/public/${resumeId}`)
 
     setResumeData (data.resume)
   } catch (error) {
