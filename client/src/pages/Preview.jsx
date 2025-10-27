@@ -13,15 +13,16 @@ const [resumeData, setResumeData] = useState(null);
 
 const loadResumeData = async () => {
   try {
-    const {data} = await api.get(`${import.meta.env.VITE_BASE_URL}/api/resumes/public/${resumeId}`)
-
-    setResumeData (data.resume)
+    const base = import.meta.env.VITE_BASE_URL.replace(/\/$/, "");
+    const { data } = await api.get(`${base}/api/resumes/public/${resumeId}`);
+    setResumeData(data.resume);
   } catch (error) {
-    console.log(error.message)
-  }finally{
-    setIsLoading(false)
+    console.log(error.response?.data || error.message);
+  } finally {
+    setIsLoading(false);
   }
-}
+};
+
 
 useEffect(() => {
   loadResumeData()
