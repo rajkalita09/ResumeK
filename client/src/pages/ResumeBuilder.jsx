@@ -80,17 +80,20 @@ const changeResumeVisibility = async () => {
 }
 
 const handleShare = () => {
-  const frontentdUrl = window.location.href.split(`/app`)[0];
-  const resumeUrl = frontentdUrl + `/view/`+ resumeId;
+  const frontendUrl = window.location.origin;
+  const resumeUrl = `${frontendUrl}/view/${resumeId}`;
 
   if (navigator.share) {
     navigator.share({
-      url: resumeUrl, text: 'Check out my resume!',
-    })
-  }else {
-    alert("sharing is not supported in this browser. Please copy the link: " + resumeUrl)
+      title: 'My Resume',
+      text: 'Check out my resume!',
+      url: resumeUrl,
+    });
+  } else {
+    alert(`Sharing not supported in this browser. Please copy the link:\n${resumeUrl}`);
   }
-}
+};
+
 
 const downloadResume = () => {
   window.print();
