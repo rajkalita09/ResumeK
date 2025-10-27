@@ -20,7 +20,11 @@ const Navbar = () => {
                 <img src="/logo.png" alt="logo" className='h-11 w-auto' />
             </Link>
             <div className='flex items-center gap-4'>
-                <p className='max-sm:hidden'>Hello, {user?.name}</p>
+                <>
+                    <p className='hidden sm:block'>Hello, {user?.name}</p> {/* Desktop */}
+                    <p className='sm:hidden text-sm font-medium text-slate-700'>Hi, {user?.name?.split(" ")[0]}</p> {/* Mobile */}
+                    </>
+
                 <button onClick={logoutUser} className='px-4 py-2 bg-yellow-500 hover:bg-yellow-700 active:scale-95 transition-all rounded-full text-white mt-1'>
                     Logout
                 </button>
