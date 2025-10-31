@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin, Linkedin, Globe, Link2 } from "lucide-react";
 
-const ModernTemplate = ({ data, accentColor }) => {
+const ModernImageTemplate = ({ data, accentColor }) => {
 	const formatDate = (dateStr) => {
 		if (!dateStr) return "";
 		const [year, month] = dateStr.split("-");
@@ -63,7 +63,7 @@ const ModernTemplate = ({ data, accentColor }) => {
 				</div>
 			</header>
 
-			<div className="p-8">
+<div className="p-8">
 				{/* Professional Summary */}
 				{data.professional_summary && (
 					<section className="mb-8">
@@ -184,4 +184,4 @@ const ModernTemplate = ({ data, accentColor }) => {
 	);
 }
 
-export default ModernTemplate;
+export default ModernImageTemplate;

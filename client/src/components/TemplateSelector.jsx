@@ -1,16 +1,28 @@
 import { Check, Layout } from 'lucide-react';
-import React, { useState, useEffect, useRef } from 'react';
+import  { useState, useEffect, useRef } from 'react';
 
 const TemplateSelector = ({ selectedTemplate, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   const templates = [
-    { id: 'classic', name: 'Classic', preview: "A classic resume template with a clean and professional layout." },
-    { id: 'modern', name: 'Modern', preview: "A modern resume template with a sleek and contemporary design." },
-    { id: 'minimal-image', name: 'Minimal Image', preview: "A minimal resume template that includes a profile image for a personal touch." },
-    { id: 'minimal', name: 'Minimal', preview: "A minimal resume template with a focus on simplicity and clarity." },
-  ];
+  { id: 'classic', name: 'Classic', preview: "A classic resume template with a timeless, professional layout." },
+  { id: 'modern', name: 'Modern', preview: "A modern resume template with a sleek, stylish, and contemporary design." },
+  { id: 'creative', name: 'Creative', preview: "A creative resume template with unique styling and visual flair." },
+  { id: 'tech', name: 'Tech', preview: "A tech resume template designed for developers and IT professionals with structured sections." },
+  { id: 'compact', name: 'Compact', preview: "A compact resume template that efficiently fits all key details in a concise format." },
+  { id: 'classic-ats', name: 'Classic-ATS', preview: "An ATS-friendly version of the classic resume template optimized for keyword scanning." },
+  { id: 'modern-ats', name: 'Modern-ATS', preview: "An ATS-compatible modern resume template combining readability and design." },
+  { id: 'minimal', name: 'Minimal-ATS-01', preview: "A minimal resume template emphasizing simplicity and clean presentation with ATS friendly." },
+  { id: 'minimal-ats', name: 'Minimal-ATS-02', preview: "An ATS-optimized minimal resume template focusing on clarity and structure." },
+  { id: 'creative-ats', name: 'Creative-ATS', preview: "An ATS-safe creative resume template balancing originality with system compatibility." },
+  { id: 'compact-ats', name: 'Compact-ATS', preview: "An ATS-ready compact resume template built for concise and efficient presentation." },
+  { id: 'minimal-image', name: 'Minimal (Image)', preview: "A minimal resume template with a profile image, maintaining elegance and simplicity." },
+  { id: 'elegent', name: 'Elegent (Image)', preview: "An elegant resume template featuring a refined layout and profile image for a classy look." },
+  { id: 'modern-image', name: 'Modern (Image)', preview: "A modern image-based resume template with bold accents and visual appeal." },
+  { id: 'visual', name: 'Visual (Image)', preview: "A visually engaging resume template that highlights your profile image and key achievements." },
+  { id: 'sleek', name: 'Sleek (Image)', preview: "A sleek, image-based resume template with a smooth and polished aesthetic." },
+];
 
   // Close dropdown when clicked outside
   useEffect(() => {

@@ -3,6 +3,18 @@ import ClassicTemplate from './templates/ClassicTemplate'
 import ModernTemplate from './templates/ModernTemplate'
 import MinimalTemplate from './templates/MinimalTemplate'
 import MinimalImageTemplate from './templates/MinimalImageTemplate'
+import ElegantTemplate from '../assets/templates/ElegantTemplate'
+import ModernImageTemplate from '../assets/templates/ModernImageTemplate'
+import CreativeTemplate from '../assets/templates/CreativeTemplate'
+import TechTemplate from '../assets/templates/TechTemplate'
+import CompactTemplate from '../assets/templates/CompactTemplate'
+import VisualImageTemplate from '../assets/templates/VisualImageTemplate'
+import SleekImageTemplate from '../assets/templates/SleekImageTemplate'
+import ClassicATSTemplate from '../assets/templates/ClassicATSTemplate'
+import ModernATSTemplate from '../assets/templates/ModernATSTemplate'
+import CompactATSTemplate from '../assets/templates/CompactATSTemplate'
+import MinimalATSTemplate from '../assets/templates/MinimalATSTemplate'
+import CreativeATSTemplate from '../assets/templates/CreativeATSTemplate'
 
 
 const ResumePreview = ({data, template, accentColor, classes=""}) => {
@@ -11,10 +23,34 @@ const ResumePreview = ({data, template, accentColor, classes=""}) => {
     switch (template) {
         case "modern":
             return <ModernTemplate data={data} accentColor={accentColor}/>;
+        case "elegent":
+            return <ElegantTemplate data={data} accentColor={accentColor}/>;
         case "minimal":
             return <MinimalTemplate data={data} accentColor={accentColor}/>;
         case "minimal-image":
             return <MinimalImageTemplate data={data} accentColor={accentColor}/>;
+        case "modern-image":
+            return <ModernImageTemplate data={data} accentColor={accentColor}/>;
+        case "creative":
+            return <CreativeTemplate data={data} accentColor={accentColor}/>;
+        case "tech":
+            return <TechTemplate data={data} accentColor={accentColor}/>;
+        case "compact":
+            return <CompactTemplate data={data} accentColor={accentColor}/>;
+        case "visual":
+            return <VisualImageTemplate data={data} accentColor={accentColor}/>;
+        case "sleek":
+            return <SleekImageTemplate data={data} accentColor={accentColor}/>;
+         case "classic-ats":
+            return <ClassicATSTemplate data={data} accentColor={accentColor}/>;
+        case "modern-ats":
+            return <ModernATSTemplate data={data} accentColor={accentColor}/>;
+        case "compact-ats":
+            return <CompactATSTemplate data={data} accentColor={accentColor}/>;
+        case "minimal-ats":
+            return <MinimalATSTemplate data={data} accentColor={accentColor}/>; 
+        case "creative-ats":
+            return <CreativeATSTemplate data={data} accentColor={accentColor}/>;    
         case "classic":
         default:
             return <ClassicTemplate data={data} accentColor={accentColor}/>;
