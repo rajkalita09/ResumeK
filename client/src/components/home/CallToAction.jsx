@@ -50,9 +50,9 @@ const CallToAction = () => {
         <p className="cta-text">
           Design your perfect resume in minutes.
         </p>
-        <a href="#" className="cta-button">
+        <Link to='/app?state=register' className="cta-button">
             Get Started Now
-        </a>
+        </Link>
       </div>
     </section>
   );
