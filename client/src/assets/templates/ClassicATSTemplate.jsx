@@ -15,6 +15,9 @@ const ClassicATSTemplate = ({ data, accentColor }) => {
         <h1 className="text-2xl font-bold tracking-wide">
           {data.personal_info?.full_name || "Your Name"}
         </h1>
+
+        <p className="text-lg">{data.personal_info?.profession || ""}</p>
+
         <p className="text-sm mt-1">
           {data.personal_info?.location && `${data.personal_info.location} | `}
           {data.personal_info?.phone && `${data.personal_info.phone} | `}
