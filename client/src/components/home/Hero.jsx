@@ -9,12 +9,35 @@ const {user} = useSelector(state => state.auth);
 const [menuOpen, setMenuOpen] = React.useState(false);
 
     const logos = [
-        'https://saasly.prebuiltui.com/assets/companies-logo/instagram.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/framer.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/microsoft.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/huawei.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/walmart.svg',
-    ]
+   {
+    name: "Netflix",
+    url: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+  },
+  {
+    name: "Amazon",
+    url: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  },
+  {
+    name: "Microsoft",
+    url: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  },
+  {
+    name: "Deloitte",
+    url: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_of_Deloitte.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  },
+  {
+    name: "Spotify",
+    url: "https://www.vectorlogo.zone/logos/spotify/spotify-ar21.svg",
+  },
+  {
+    name: "Netlify",
+    url: "https://www.vectorlogo.zone/logos/netlify/netlify-ar21.svg",
+  },
+  {
+    name: "Adobe",
+    url: "https://www.vectorlogo.zone/logos/adobe_acrobat/adobe_acrobat-ar21.svg",
+  },
+];
 
   return (
     <>
@@ -29,7 +52,7 @@ const [menuOpen, setMenuOpen] = React.useState(false);
                         <a href="#" className="hover:text-yellow-600 transition">Home</a>
                         <a href="#features" className="hover:text-yellow-600 transition">Features</a>
                         <a href="#testimonials" className="hover:text-yellow-600 transition">Testimonials</a>
-                        <a href="#cta" className="hover:text-yellow-600 transition">Contact</a>
+                        {/* <a href="#contact" className="hover:text-yellow-600 transition">Contact</a> */}
                     </div>
 
                     <div className="flex gap-2">
@@ -56,7 +79,7 @@ const [menuOpen, setMenuOpen] = React.useState(false);
                     <a href="#" className="text-white">Home</a>
                     <a href="#features" className="text-white">Features</a>
                     <a href="#testimonials" className="text-white">Testimonials</a>
-                    <a href="#contact" className="text-white">Contact</a>
+                    {/* <a href="#contact" className="text-white">Contact</a> */}
                     <button onClick={() => setMenuOpen(false)} className="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-yellow-600 hover:bg-yellow-700 transition text-white rounded-md flex" >
                         X
                     </button>
@@ -106,11 +129,35 @@ const [menuOpen, setMenuOpen] = React.useState(false);
 
                     <p className="py-6 text-slate-600 mt-14">Trusting by leading brands, including</p>
 
-                    <div className="flex flex-wrap justify-between max-sm:justify-center gap-6 max-w-3xl w-full mx-auto py-4" id="logo-container">
-                        {logos.map((logo, index) => <img key={index} src={logo} alt="logo" className="h-6 w-auto max-w-xs" />)}
-                    </div>
+                    <div className="overflow-hidden w-full py-4">
+  <div className="flex w-max animate-logo-scroll gap-x-12 items-center">
+    {/* First set */}
+    {logos.map((logo) => (
+      <img
+        key={`first-${logo.name}`}
+        src={logo.url}
+        alt={`${logo.name} logo`}
+        className="h-10 w-auto max-w-[140px] object-contain flex-shrink-0 transition-transform duration-200 hover:scale-110"
+        loading="lazy"
+      />
+    ))}
+
+    {/* Duplicate set for infinite loop */}
+    {logos.map((logo) => (
+      <img
+        key={`second-${logo.name}`}
+        src={logo.url}
+        alt={`${logo.name} logo`}
+        className="h-10 w-auto max-w-[140px] object-contain flex-shrink-0 transition-transform duration-200 hover:scale-110"
+        loading="lazy"
+      />
+    ))}
+  </div>
+</div>
+               
+               
                 </div>
-            </div>
+                 </div>
             <style>
                 {`
                     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
